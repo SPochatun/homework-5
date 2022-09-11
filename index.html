@@ -27,7 +27,7 @@
 
           <ul class="nav-page list">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link">Студія</a>
+              <a href="./index.html" class="nav-link current">Студія</a>
             </li>
             <li class="nav-item">
               <a href="./portfolio.html" class="nav-link">Портфоліо</a>
@@ -66,7 +66,9 @@
 
       <section class="hero-section">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button">Замовити послугу</button>
+        <button type="button" class="button" data-open-modal="">
+          Замовити послугу
+        </button>
       </section>
 
       <!--Особливості-->
@@ -135,25 +137,34 @@
           <h2 class="title-work">Чим ми займаємося</h2>
           <ul class="flex-work">
             <li class="list">
-              <img
-                src="./images/work/box-1.jpg"
-                alt="людина працює за компютером"
-                width="370"
-              />
+              <div class="thumb">
+                <img
+                  src="./images/work/box-1.jpg"
+                  alt="людина працює за компютером"
+                  width="370"
+                />
+                <p class="work-label">Десктопні додатки</p>
+              </div>
             </li>
             <li class="list">
-              <img
-                src="./images/work/box-2.jpg"
-                alt="Людина тримає в руках телефон"
-                width="370"
-              />
+              <div class="thumb">
+                <img
+                  src="./images/work/box-2.jpg"
+                  alt="Людина тримає в руках телефон"
+                  width="370"
+                />
+                <p class="work-label">Мобільні додатки</p>
+              </div>
             </li>
             <li class="list">
-              <img
-                src="./images/work/box-3.jpg"
-                alt="людина тримає в руках планшет"
-                width="370"
-              />
+              <div class="thumb">
+                <img
+                  src="./images/work/box-3.jpg"
+                  alt="людина тримає в руках планшет"
+                  width="370"
+                />
+                <p class="work-label">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -629,5 +640,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <button type="button" class="modal-close" data-close-modal>
+          <svg class="icon-close" width="11" height="11">
+            <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
